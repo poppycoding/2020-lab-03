@@ -20,7 +20,7 @@
     <properties>
         <lombok.version>1.18.10</lombok.version>
         <junit.version>4.12</junit.version>
-        <cucumber.version>2.0.0-SNAPSHOT</cucumber.version>
+        <cucumber.version>5.0.0-RC1</cucumber.version>
         <mockito-core.version>2.8.47</mockito-core.version>
         <junit-jupiter.version>5.5.2</junit-jupiter.version>
         <junit-vintage.version>5.5.2</junit-vintage.version>
