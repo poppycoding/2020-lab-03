@@ -14,12 +14,14 @@
     <build>
         <plugins>
             <plugin>
+                <!--利用mvn surefire插件结合tag标签自定义filter,选择要执行的测试用例-->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
-                    <properties>
-                        <includeTags>functional</includeTags>
-                    </properties>
+                    <!--include要执行包含如下tag的测试-->
+                    <groups>functional,non-functional,Two</groups>
+                    <!--exclude不执行包含如下tag的测试-->
+                    <excludedGroups>load,One</excludedGroups>
                 </configuration>
             </plugin>
         </plugins>
