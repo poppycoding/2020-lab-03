@@ -1,6 +1,5 @@
 package com.xlaser.junit.assertion;
 
-import com.xlaser.junit.Person;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 

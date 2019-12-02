@@ -1,4 +1,4 @@
-package com.xlaser.junit;
+package com.xlaser.junit.assertion;
 
 import cn.hutool.core.lang.Console;
 import lombok.AllArgsConstructor;

@@ -27,8 +27,6 @@
 
     <modules>
         <module>allure</module>
-        <module>assertions</module>
-        <module>conditional</module>
         <module>cucumber2</module>
         <module>injection</module>
         <module>dynamic</module>

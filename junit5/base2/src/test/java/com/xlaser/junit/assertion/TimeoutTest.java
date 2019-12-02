@@ -3,7 +3,6 @@ package com.xlaser.junit.assertion;
 import java.time.Duration;
 
 import cn.hutool.core.lang.Console;
-import com.xlaser.junit.Person;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.function.Executable;
