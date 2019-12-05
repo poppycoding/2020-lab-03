@@ -27,17 +27,13 @@
 
     <modules>
         <module>allure</module>
-        <module>cucumber2</module>
-        <module>injection</module>
-        <module>dynamic</module>
-        <module>extension</module>
-        <module>platform</module>
-        <module>launcher</module>
         <module>annotation</module>
-        <module>mockito2</module>
-        <module>nested</module>
-        <module>parameterized</module>
         <module>base2</module>
+        <module>cucumber2</module>
+        <module>extension</module>
+        <module>launcher</module>
+        <module>mockito2</module>
+        <module>parameterized</module>
         <module>rest-assured</module>
         <module>spring2</module>
         <module>springboot-rest</module>
