@@ -31,7 +31,6 @@
         <module>base2</module>
         <module>extension</module>
         <module>parameterized</module>
-        <module>spring2</module>
         <module>springboot-rest</module>
         <module>springboot-mockito</module>
         <module>wiremock</module>
