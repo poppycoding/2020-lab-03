@@ -29,12 +29,8 @@
         <module>allure</module>
         <module>annotation</module>
         <module>base2</module>
-        <module>cucumber2</module>
         <module>extension</module>
-        <module>launcher</module>
-        <module>mockito2</module>
         <module>parameterized</module>
-        <module>rest-assured</module>
         <module>spring2</module>
         <module>springboot-rest</module>
         <module>springboot-mockito</module>
