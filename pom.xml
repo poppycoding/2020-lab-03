@@ -2,6 +2,12 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.6.RELEASE</version>
+    </parent>
+
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.xlaser4j.junit</groupId>
@@ -14,15 +20,13 @@
         <module>junit3</module>
         <module>junit4</module>
         <module>junit5</module>
+        <module>junit-case</module>
     </modules>
-
 
     <properties>
         <junit.version>4.12</junit.version>
         <cucumber.version>5.0.0-RC1</cucumber.version>
         <mockito-core.version>3.1.0</mockito-core.version>
-        <spring.version>5.2.1.RELEASE</spring.version>
-        <spring-boot.version>2.2.1.RELEASE</spring-boot.version>
         <hutool-all.version>5.0.5</hutool-all.version>
         <lombok.version>1.18.10</lombok.version>
         <maven-surefire-plugin.version>2.22.0</maven-surefire-plugin.version>
@@ -59,30 +63,10 @@
                 <version>${mockito-core.version}</version>
                 <scope>test</scope>
             </dependency>
-
-            <!--spring boot-->
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter</artifactId>
-                <version>${spring-boot.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-web</artifactId>
-                <version>${spring-boot.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-test</artifactId>
-                <version>${spring-boot.version}</version>
-                <scope>test</scope>
-            </dependency>
-
         </dependencies>
     </dependencyManagement>
 
     <dependencies>
-        <!--tool-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
