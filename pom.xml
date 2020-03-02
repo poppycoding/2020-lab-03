@@ -27,7 +27,7 @@
         <junit.version>4.12</junit.version>
         <cucumber.version>5.0.0-RC1</cucumber.version>
         <mockito-core.version>3.1.0</mockito-core.version>
-        <hutool-all.version>5.0.5</hutool-all.version>
+        <hutool-all.version>5.1.5</hutool-all.version>
         <lombok.version>1.18.10</lombok.version>
         <maven-surefire-plugin.version>2.22.0</maven-surefire-plugin.version>
     </properties>
