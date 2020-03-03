@@ -6,6 +6,7 @@ import org.mockito.*;
 import org.mockito.junit.MockitoJUnitRunner;
 
 import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
 /**
@@ -24,8 +25,6 @@ import static org.mockito.Mockito.verify;
  * @author: Elijah.D
  * @time: 2019/11/26 13:39
  * @description: 测试captor的使用
-
-
  * @modified: Elijah.D
  */
 @RunWith(MockitoJUnitRunner.class)
@@ -39,7 +38,7 @@ public class LoginServiceCaptorTest {
      * 3.进行值的验证,通过captor.getValue()得到该对象执行时的值.
      */
     @Captor
-    ArgumentCaptor<LoginForm> captor;
+    ArgumentCaptor<LoginForm> argument;
 
     /**
      * Note that @InjectMocks will only inject mocks/spies created using the @Spy or @Mock annotation
@@ -61,8 +60,11 @@ public class LoginServiceCaptorTest {
     @Test
     public void testArgumentCaptor() {
         service.login(new LoginForm("foo", "bar"));
-        verify(repo).login(captor.capture());
-        assertEquals("foo", captor.getValue().getUsername());
-        assertEquals("bar", captor.getValue().getPassword());
+        verify(repo, times(1)).login(argument.capture());
+        assertEquals("foo", argument.getValue().getUsername());
+        service.login(new LoginForm("foo2", "bar2"));
+        verify(repo, times(2)).login(argument.capture());
+        assertEquals("foo2", argument.getValue().getUsername());
+        assertEquals("bar2", argument.getValue().getPassword());
     }
 }
