@@ -21,6 +21,7 @@
         <module>junit4</module>
         <module>junit5</module>
         <module>junit-case</module>
+        <module>junit-effective</module>
     </modules>
 
     <properties>
