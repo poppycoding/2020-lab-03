@@ -1,18 +1,20 @@
-<h3 align=center> JUNIT4J </h3> 
+<h3 align=center>JUNIT4J</h3> 
 
 #### Junit3-记录简单的官方demo
 - TestCase
 - TestSuite
 ---
 
+
 #### Junit4-实践junit4的功能特性
 - Base
   - Category | Rule | Suite | Assume | FixMethodOrder | Ignore | Parameterized | Theory
 - Cucumber
 - Mockito
-- Spring
-- SpringBoot
+- SpringMvcTest
+- SpringBootTest
 ---
+
 
 #### Junit5-学习junit5的新特性
 - Allure
@@ -22,7 +24,12 @@
 - Extension
 - Parameterized
 - SpringBoot
-  - Rest | Mockito
+  - RestTemplateTest | Mockito
+---
+
+
+#### [Effective](https://github.com/xlaser4j/junit4j/tree/master/junit-effective)-基于Effective Unit Testing,学习记录相关case
+
 ---
 
 #### Case-记录其他单元测试相关用例
@@ -30,11 +37,7 @@
 - ~~PowerMockito~~
 ---
 
-#### Effective-基于Effective Unit Testing,学习记录相关case
 
-
-
----
 #### Reference
 
 * [Bonigarcia](https://github.com/bonigarcia/mastering-junit5)
