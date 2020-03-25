@@ -8,6 +8,7 @@ import org.jmock.Mockery;
 import org.jmock.integration.junit4.JUnit4Mockery;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.mockito.ArgumentMatchers.contains;
@@ -29,7 +30,8 @@ public class TestTranslator {
     }
 
     @Test
-    public void usesInternetForTranslation() {
+    @Ignore
+    public void usesInternetForTranslationByJMock() {
         Internet internet = context.mock(Internet.class);
         context.checking(new Expectations() {{
             oneOf(internet).get(with(StringContains.containsString("langpair=en%7Cfi")));
@@ -43,7 +45,8 @@ public class TestTranslator {
     }
 
     @Test
-    public void usesInternetForTranslation2() {
+    @Ignore
+    public void usesInternetForTranslationByMockito() {
         Internet internet = mock(Internet.class);
         when(internet.get(contains("langpair=en%7Cfi"))).thenReturn("{\"translatedText\":\"kukka\"}");
         Translator translator = new Translator(internet);
