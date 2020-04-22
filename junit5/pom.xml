@@ -16,7 +16,7 @@
         <junit-jupiter.version>5.5.2</junit-jupiter.version>
         <junit-vintage.version>5.5.2</junit-vintage.version>
         <junit-platform.version>1.3.2</junit-platform.version>
-        <allure-junit5.version>2.6.0</allure-junit5.version>
+        <allure-junit5.version>2.13.3</allure-junit5.version>
         <allure-maven.version>2.8</allure-maven.version>
         <hamcrest.version>1.3</hamcrest.version>
         <mockito-junit-jupiter.version>2.19.0</mockito-junit-jupiter.version>
